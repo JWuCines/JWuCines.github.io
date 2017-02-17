@@ -1,0 +1,30 @@
+# Dependencies
+markdown:         kramdown
+
+# Setup
+title:            Traceroute the way
+description:      Traceroute the way - Manuele Trimarchi's weblog
+tagline:          di Manuele Trimarchi
+paginate:         5
+paginate_path:    '/page/:num'
+baseurl:          '/'
+url:              'https://trimarchimanuele.it'
+permalink:        '/:year/:month/:title/'
+license:
+  link:           'https://creativecommons.org/licenses/by-nc/3.0/'
+  label:          'CC BY-NC'
+author:
+  name:           Manuele Trimarchi
+  url:            https://trimarchimanuele.it
+  email:          github@trimarchimanuele.it
+
+# Custom vars
+version:          0.3.0
+github:
+  repo:           https://github.com/mtrimarchi/mtrimarchi.github.io
+
+# Custom configs
+gems: [jekyll-paginate]
+
+kramdown:
+  auto_ids: true # Auto-generate ID's for headings

@@ -1,0 +1,245 @@
+html {
+	font-family: "PT Serif", Georgia, "Times New Roman", serif;
+	font-size: 16px;
+}
+
+a {
+	color: #1B6AA0;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway", Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+p img {
+	border-radius: 3px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+pre {
+	display: block;
+	margin-top: 0;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	font-size: 0.8rem;
+	line-height: 1.4;
+	background-color: #f9f9f9;
+	overflow-x: auto;
+	white-space: pre;
+	word-wrap: normal;
+}
+
+pre code {
+	padding-right: 1rem;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.masthead-title {
+	width: 100%;
+}
+
+.masthead img {
+	display: block;
+	margin-bottom: 0;
+	margin-right: auto;
+	margin-left: auto;
+	height: 5rem;
+	border-radius: 2.5rem;
+	border: 2px solid #000000;
+}
+
+.masthead-title a {
+	display: block;
+	text-align: center;
+}
+
+.masthead-title small {
+	font-size: 65%;
+	font-weight: 400;
+	color: #999999;
+	letter-spacing: 0;
+	display: block;
+	text-align: center;
+}
+
+.post {
+	margin-bottom: 2rem;
+}
+
+.post-title-link {
+	font-size: 1.1rem;
+	text-align: left;
+}
+
+.post-title-link a:hover {
+	text-decoration: none;
+}
+
+.post-date {
+	text-align: center;
+}
+
+.highlight {
+	border-left: solid 5px #ff6562;
+}
+
+.post-closure {
+	margin-bottom: 2rem;
+	text-align: center;
+	font-size: 1rem;
+}
+
+.icon-closure {
+	padding: 0.4rem;
+	color: #f4f4f4;
+}
+
+.icon-commentary {
+	padding-left: 0.5rem;
+	color: rgb(169, 169, 169);
+	transition: color 0.5s;
+}
+
+.icon-commentary:hover {
+	color: #303030;
+}
+
+.pagination {
+	margin: 0.3rem 0;
+}
+
+.pagination-item {
+	background-color: #FFFFFF;
+	color: #A9A9A9;
+	border: none;
+	font-size: 3rem;
+	padding: 0;
+}
+
+a.pagination-item {
+	color: #515151;
+}
+
+a.pagination-item:hover {
+	text-decoration: none;
+	background-color: #FFFFFF;
+}
+
+
+.footer {
+	text-align: center;
+	margin-top: 3rem;
+	font-size: 0.8rem;
+}
+
+.social-icons {
+	text-align: center;
+	font-size: 2rem;
+	margin-top: -3.8rem;
+	margin-bottom: 1rem;
+	margin-left: 0.8rem;
+	letter-spacing: 0.8rem;
+}
+
+.social-icons a {
+	color: #515151;
+}
+
+.social-section {
+	margin-bottom: 1rem;
+	margin-top: -1rem;
+}
+
+.twitter-share-button {
+	vertical-align: text-bottom !important;
+	margin-left: 2rem;
+}
+
+.search-form {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.search-form input {
+	height: 1.3rem;
+	padding: 0.3rem;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #1B6AA0;
+}
+
+.search-form input:focus {
+	border-color: #1B6AA0;
+}
+
+@media only screen and (min-width : 768px) {
+	/* Some responsive stuff :-))) */
+
+	html {
+		font-size: 20px;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		text-align: left;
+	}
+
+	.masthead-title {
+		width: auto;
+	}
+
+	.masthead-title a {
+		display: inline;
+		text-align: left;
+	}
+
+	.masthead img {
+		display: inline;
+		vertical-align: middle;
+		height: 3rem;
+		border-radius: 1.5rem;
+	}
+
+	.masthead-title small {
+		display: inline;
+		text-align: left;
+	}
+
+	.post-date {
+		text-align: left;
+	}
+}
+
+/**
+ * Link placement and hover behavior.
+ */
+
+.anchorjs-link {
+  color: inherit !important;
+  text-decoration: none !important; /* do not underline */
+}
+
+@media (max-width: 768px) {
+  /* Do not display AnchorJS icon on less than 768px view point */
+  .anchorjs-link {
+    display: none;
+  }
+}
+
+*:hover > .anchorjs-link {
+  opacity: .75;
+  /* To fade links as they appear, change transition-property from 'color' to 'all' */
+  -webkit-transition: color .16s linear;
+  transition: color .16s linear;
+}
+
+*:hover > .anchorjs-link:hover,
+.anchorjs-link:focus {
+  text-decoration: none !important; /* do not underline */
+  opacity: 1;
+}
