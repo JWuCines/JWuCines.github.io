@@ -27,6 +27,7 @@ google_plus_username: ManueleTrimarchi
 facebook_username:    mtrimarchi
 telegram_username:    mtrimarchi
 disqus_username:      trimarchimanuele
+fb_app_id:            254147531706027
 
 # Custom vars
 version:          0.3.0
