@@ -5,7 +5,7 @@
 		<div class="container content">
 			<div class="masthead">
 				<h3 class="masthead-title">
-				<img src="{{ site.baseurl }}public/avatar.jpg" alt="Manuele Trimarchi">
+				<img src="{{ site.baseurl }}public/avatar.jpg" alt="{{ site.author.name }}">
 				<a href="{{ site.baseurl }}" title="Home page">{{ site.title }}</a>
 				<small>{{ site.tagline }}</small>
 				</h3>
@@ -27,7 +27,7 @@
 				<p>
 					&copy; {{ site.title }} <br />
 					Brought to you by {{ site.author.name }} <br />
-					Hosted on <a href="https://github.com/mtrimarchi/mtrimarchi.github.io">GitHub</a>,
+					Hosted on <a href="{{ site.github.repo }}">GitHub</a>,
 					made with ❤ and <a href="http://jekyllrb.com/">Jekyll</a><br />
 					under <a href="{{ site.license.link }}">{{ site.license.label }}</a>.
 				</p>
