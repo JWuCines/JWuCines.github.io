@@ -3,4 +3,4 @@ layout: page
 title: About Me
 ---
 
--> … This page is still a work in progress … <-
+<p class="lead text-center">... This page is still a work in progress ... </p>
