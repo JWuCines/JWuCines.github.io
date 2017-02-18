@@ -3,8 +3,8 @@ layout: default
 ---
 
   <div class="post">
-      <h1 class="post-title text-center"><a href="{{ page.url }}" alt="{{ page.title }}">{{ page.title }}</a> <i class="fa fa-comments-o icon-commentary"></i></h1>
-      <h2 class="post-title post-title-link"><a href="{{ page.origlink }}">{{ page.origlink }}</a></h2>
+      <h1 class="post-title text-center">{{ page.title }}</h1>
+      <h2 class="post-title post-title-link"><a href="{{ page.origlink }}"><i class="fa fa-comments-o icon-commentary"></i> {{ page.origlink }}</a></h2>
       <span class="post-date"><i class="fa fa-link"></i>ed on {{ page.date | date_to_string }}</span>
       {{ content }}
   </div>
