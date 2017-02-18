@@ -1,6 +1,8 @@
 	<head>
 		
-		<meta charset="utf-8"> {% if page.url %}
+		<meta charset="utf-8">
+		
+		{% if page.url %}
 		<link rel="canonical" href="{{ site.url }}{{ page.url }}" /> {% else %}
 		<link rel="canonical" href="{{ site.url }}" /> {% endif %}
 
