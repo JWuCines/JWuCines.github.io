@@ -3,4 +3,13 @@ layout: page
 title: About Me
 ---
 
-todo
+...
+This
+page
+is
+still
+a
+work
+in
+progress
+...
