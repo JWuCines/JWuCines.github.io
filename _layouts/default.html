@@ -1,74 +1,67 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
-
-  {% include head.html %}
-
-  <body>
-    <div class="container content">
-      <div class="masthead">
-        <h3 class="masthead-title">
-          <img src="{{ site.baseurl }}public/avatar.jpg" alt="Manuele Trimarchi">
-          <a href="{{ site.baseurl }}" title="Home page">{{ site.title }}</a>
-          <small>{{ site.tagline }}</small>
-        </h3>
-      </div>
-      <div class="social-icons">
-      	<a href="{{ site.baseurl }}about/" title="About Me"><i class="fa fa-user-circle-o"></i></a>
-      	<a href="https://github.com/{{ site.github_username }}" title="GitHub - {{ site.github_username }}"><i class="fa fa-github"></i></a>
-      	<a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter - @{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a>
-      	<a href="https://linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIN - @{{ site.linkedin_username }}"><i class="fa fa-linkedin"></i></a>
-      	<a href="https://facebook.com/{{ site.facebook_username }}" title="Facebook - @{{ site.facebook_username }}"><i class="fa fa-facebook"></i></a>
-      	<a href="https://plus.google.com/{{ site.google_plus_username }}" title="Google Plus - @{{ site.google_plus_username }}"><i class="fa fa-google-plus"></i></a>
-      	<a href="https://t.me/{{ site.telegram_username }}" title="Telegram - @{{ site.telegram_username }}"><i class="fa fa-telegram"></i></a>
-      </div>
-      {{ content }}
-
-		<div class="footer">
-			<form class="search-form" action="/search" method="get"><input type="text" placeholder="Cerca →" name="query"></form>
-			<br />
-			<p>
-				&copy; {{ site.title }} <br />
-				Brought to you by {{ site.author.name }} <br />
-				Hosted on <a href="https://github.com/mtrimarchi/mtrimarchi.github.io">GitHub</a>,
-				made with ❤ and <a href="http://jekyllrb.com/">Jekyll</a><br />
-				under <a href="{{ site.license.link }}">{{ site.license.label }}</a>.
-			</p>
+	{% include head.html %}
+	<body>
+		<div class="container content">
+			<div class="masthead">
+				<h3 class="masthead-title">
+				<img src="{{ site.baseurl }}public/avatar.jpg" alt="Manuele Trimarchi">
+				<a href="{{ site.baseurl }}" title="Home page">{{ site.title }}</a>
+				<small>{{ site.tagline }}</small>
+				</h3>
+			</div>
+			<div class="social-icons">
+				<a href="{{ site.baseurl }}about/" title="About Me"><i class="fa fa-user-circle-o"></i></a>
+				<a href="https://github.com/{{ site.github_username }}" title="GitHub - {{ site.github_username }}"><i class="fa fa-github"></i></a>
+				<a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter - @{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a>
+				<a href="https://linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIN - @{{ site.linkedin_username }}"><i class="fa fa-linkedin"></i></a>
+				<a href="https://facebook.com/{{ site.facebook_username }}" title="Facebook - @{{ site.facebook_username }}"><i class="fa fa-facebook"></i></a>
+				<a href="https://plus.google.com/{{ site.google_plus_username }}" title="Google Plus - @{{ site.google_plus_username }}"><i class="fa fa-google-plus"></i></a>
+				<a href="https://t.me/{{ site.telegram_username }}" title="Telegram - @{{ site.telegram_username }}"><i class="fa fa-telegram"></i></a>
+			</div>
+			{{ content }}
+			<div class="footer">
+				<form class="search-form" action="/search" method="get"><input type="text" placeholder="Cerca →" name="query"></form>
+				<br />
+				<p>
+					&copy; {{ site.title }} <br />
+					Brought to you by {{ site.author.name }} <br />
+					Hosted on <a href="https://github.com/mtrimarchi/mtrimarchi.github.io">GitHub</a>,
+					made with ❤ and <a href="http://jekyllrb.com/">Jekyll</a><br />
+					under <a href="{{ site.license.link }}">{{ site.license.label }}</a>.
+				</p>
+			</div>
 		</div>
-    </div>
-    <!-- Header Anchor Links in Vanilla JavaScript for GitHub Pages and Jekyll
-    https://byparker.com/blog/2014/header-anchor-links-in-vanilla-javascript-for-github-pages-and-jekyll/ -->
-	<script>
+		<!-- Header Anchor Links in Vanilla JavaScript for GitHub Pages and Jekyll
+		https://byparker.com/blog/2014/header-anchor-links-in-vanilla-javascript-for-github-pages-and-jekyll/ -->
+		<script>
 		var anchorForId = function (id) {
-		  var anchor = document.createElement("a");
-		  anchor.className = "header-link";
-		  anchor.href      = "#" + id;
-		  anchor.innerHTML = "<i class=\"fa fa-link\"></i>";
-		  return anchor;
+			var anchor = document.createElement("a");
+			anchor.className = "header-link";
+			anchor.href      = "#" + id;
+			anchor.innerHTML = "<i class=\"fa fa-link\"></i>";
+			return anchor;
 		};
-
 		var linkifyAnchors = function (level, containingElement) {
-		  var headers = containingElement.getElementsByTagName("h" + level);
-		  for (var h = 0; h < headers.length; h++) {
-		    var header = headers[h];
-
-		    if (typeof header.id !== "undefined" && header.id !== "") {
-		      header.appendChild(anchorForId(header.id));
-		    }
-		  }
+			var headers = containingElement.getElementsByTagName("h" + level);
+			for (var h = 0; h < headers.length; h++) {
+				var header = headers[h];
+				if (typeof header.id !== "undefined" && header.id !== "") {
+					header.appendChild(anchorForId(header.id));
+				}
+			}
 		};
-
 		document.onreadystatechange = function () {
-		  if (this.readyState === "complete") {
-		    var contentBlock = document.getElementsByClassName("docs")[0] || document.getElementsByClassName("news")[0];
-		    if (!contentBlock) {
-		      return;
-		    }
-		    for (var level = 1; level <= 6; level++) {
-		      linkifyAnchors(level, contentBlock);
-		    }
-		  }
+			if (this.readyState === "complete") {
+					var contentBlock = document.getElementsByClassName("docs")[0] || document.getElementsByClassName("news")[0];
+					if (!contentBlock) {
+					return;
+				}
+				for (var level = 1; level <= 6; level++) {
+					linkifyAnchors(level, contentBlock);
+				}
+			}
 		};
-	</script>
-
-  </body>
+		</script>
+	</body>
 </html>
