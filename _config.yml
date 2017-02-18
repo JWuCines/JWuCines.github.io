@@ -39,3 +39,5 @@ gems: [jekyll-paginate]
 
 kramdown:
   auto_ids: true # Auto-generate ID's for headings
+
+theme: jekyll-theme-minimal
