@@ -22,13 +22,10 @@
 			</div>
 			{{ content }}
 			<div class="footer">
-				<p>
-					<a href="{{ site.baseurl }}archive/" title="Archivio articoli">Archivio articoli <i class="fa fa-archive" aria-hidden="true"></i></a>
-				</p>
-				<p>
-					Ricerca articoli <i class="fa fa-search" aria-hidden="true"></i><br>
-					<form class="search-form" action="/search" method="get"><input type="text" placeholder="Cerca" name="query"></form>
-				</p>
+				Ricerca <i class="fa fa-search" aria-hidden="true"></i>
+				<form class="search-form" action="/search" method="get"><input type="text" placeholder="Cerca →" name="query"></form>
+				<br />
+				<a href="{{ site.baseurl }}archive/" title="Archivio articoli">Archivio articoli <i class="fa fa-archive" aria-hidden="true"></i></a>
 				<br />
 				<p>
 					&copy; {{ site.title }} <br />
