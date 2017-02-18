@@ -216,6 +216,21 @@ a.pagination-item:hover {
 }
 
 /**
+ * disqus
+ */
+.comments {
+    padding-top: 30px;
+    margin-bottom: 80px;
+    overflow-x: hidden;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+@media(max-width: 767px) { .comments { margin-bottom: 60px; } }
+.comments a { color: #3f4549; }
+.comments a:focus, .comments a:hover{ color: #303437; }
+.btn-disqus { display: block; width: 100%; padding: 13px; font-size: 13px; border-radius: 4px; }
+.btn-disqus.fa { margin-right: .6em; }
+
+/**
  * Link placement and hover behavior.
  */
 
