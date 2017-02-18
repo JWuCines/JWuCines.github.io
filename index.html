@@ -6,17 +6,14 @@ title: Home
   <div class="posts">
     {% for post in paginator.posts %}
     <!-- Start post -->
-    <div class="post">
+    <div class="text-right">
+      <h1 class="post-title">{{ post.title }}</h1>
       {% if post.layout == "link" %}
-      <h1 class="post-title text-center"><a href="{{ post.url }}" alt="{{ post.title }}">{{ post.title }}</a></h1>
-        <h2 class="post-title post-title-link"><a href="{{ post.origlink }}"><i class="fa fa-comments-o icon-commentary"></i> {{ post.origlink }}</a></h2>
-          <span class="post-date"><i class="fa fa-link"></i>ed on {{ post.date | date_to_string }}</span>
-      {% else %}
-      <h1 class="post-title text-center"><a href="{{ post.url }}" alt="{{ post.title }}">{{ post.title }}</a></h1>
-        <span class="post-date">{{ post.date | date_to_string }}</span>
+      <h2 class="post-title post-title-link"><a href="{{ post.origlink }}">{{ post.origlink }} <i class="fa fa-comments-o icon-commentary"></i></a></h2>
       {% endif %}
-      {{ post.content }}
+      <span class="post-date"><i class="fa fa-link"></i>ed on {{ post.date | date_to_string }}</span>
     </div>
+    {{ post.content }}
     <div class="post-closure"><i class="icon-closure fa fa-paper-plane-o"></i></div>
     <!-- End post -->
     {% endfor %}
