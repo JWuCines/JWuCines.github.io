@@ -21,13 +21,10 @@
 				<a href="https://t.me/{{ site.telegram_username }}" title="Telegram - @{{ site.telegram_username }}"><i class="fa fa-telegram"></i></a>
 			</div>
 			<div class="site-info text-center">
-				<p>
-					Ricerca <i class="fa fa-search" aria-hidden="true"></i>
-					<form class="search-form" action="/search" method="get"><input type="text" placeholder="Cerca →" name="query"></form>
-				</p>
-				<p>
-					<a href="{{ site.baseurl }}archive/" title="Archivio articoli">Archivio articoli <i class="fa fa-archive" aria-hidden="true"></i></a
-				</p>
+					<form class="search-form" action="/search" method="get">
+						Ricerca <input type="text" placeholder="Cerca →" name="query"> <i class="fa fa-search" aria-hidden="true"></i>
+					</form>
+					<a href="{{ site.baseurl }}archive/" title="Archivio articoli">Archivio articoli <i class="fa fa-archive" aria-hidden="true"></i>
 			</div>
 			<br />
 			{{ content }}
