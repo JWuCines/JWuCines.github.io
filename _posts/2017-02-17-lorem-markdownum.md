@@ -3,7 +3,7 @@ layout: post
 status: publish
 published: true
 title: Limine rerum poenae
-description: Lorem markdownum clamat coactis: hic Procris Dianam
+description: Lorem markdownum clamat coactis hic Procris Dianam
 origlink: https://github.com/jaspervdj/lorem-markdownum
 date: 2017-02-17 11:56:00 +0200
 categories:
