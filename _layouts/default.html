@@ -12,6 +12,18 @@
 			</div>
 			<div class="social-icons">
 				<a href="{{ site.baseurl }}about/" title="About Me"><i class="fa fa-user-circle-o"></i></a>
+				<a href="{{ site.baseurl }}archive/" title="Archivio"><i class="fa fa-archive"></i></a>
+				<a href="https://github.com/{{ site.github_username }}/ama" title="Ask me something"><i class="fa fa-question-circle"></i></a>
+			</div>
+			<div class="site-info text-center">
+					<form class="search-form" action="/search" method="get">
+						Ricerca <input type="text" placeholder="Cerca →" name="query"> <i class="fa fa-search" aria-hidden="true"></i>
+					</form>
+			</div>
+			<br />
+			{{ content }}
+
+			<div class="social-icons">
 				<a href="https://github.com/{{ site.github_username }}" title="GitHub - {{ site.github_username }}"><i class="fa fa-github-square"></i></a>
 				<a href="https://bitbucket.org/{{ site.bitbucket_username }}" title="Bitbucket - {{ site.bitbucket_username }}"><i class="fa fa-bitbucket-square"></i></a>
 				<a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter - @{{ site.twitter_username }}"><i class="fa fa-twitter-square"></i></a>
@@ -20,14 +32,6 @@
 				<a href="https://plus.google.com/{{ site.google_plus_username }}" title="Google Plus - @{{ site.google_plus_username }}"><i class="fa fa-google-plus-square"></i></a>
 				<a href="https://t.me/{{ site.telegram_username }}" title="Telegram - @{{ site.telegram_username }}"><i class="fa fa-telegram"></i></a>
 			</div>
-			<div class="site-info text-center">
-					<form class="search-form" action="/search" method="get">
-						Ricerca <input type="text" placeholder="Cerca →" name="query"> <i class="fa fa-search" aria-hidden="true"></i>
-					</form>
-					<a href="{{ site.baseurl }}archive/" title="Archivio articoli">Archivio articoli <i class="fa fa-archive" aria-hidden="true"></i></a>
-			</div>
-			<br />
-			{{ content }}
 			<div class="footer">
 				<p>
 					&copy; {{ site.title }} <br />
