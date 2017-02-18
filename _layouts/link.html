@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<div class="post">
-    <h1 class="post-title post-title-link"><a href="{{ page.origlink }}">{{ page.title }}</a> <i class="fa fa-comments-o icon-commentary"></i></h1>
-    <span class="post-date"><i class="fa fa-link"></i>ed on {{ page.date | date_to_string }}</span>
-    {{ content }}
-</div>
+  <div class="post">
+      <h1 class="post-title post-title-link"><a href="{{ page.origlink }}">{{ page.title }}</a> <i class="fa fa-comments-o icon-commentary"></i></h1>
+      <span class="post-date"><i class="fa fa-link"></i>ed on {{ page.date | date_to_string }}</span>
+      {{ content }}
+  </div>
 
   <div class="social-section">
       <div class="fb-like" data-href="{{ page.url }}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
@@ -20,10 +20,10 @@ layout: default
       </button>
       <div id="disqus_thread"></div>
       <noscript>
-          <p>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+          <p>
+            Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
           </p>
       </noscript>
-      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
   </div>
   <script id="dsq-count-scr" src="//{{ site.disqus_username }}.disqus.com/count.js" async></script>
   <script>
