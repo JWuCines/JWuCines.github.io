@@ -2,47 +2,58 @@
 layout: default
 ---
 
-<div class="post">
-  <h1 class="post-title"><a href="{{ page.url }}" alt="{{ page.title }}">{{ page.title }}</a></h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
-</div>
+  <div class="post">
+      <h1 class="post-title"><a href="{{ page.url }}" alt="{{ page.title }}">{{ page.title }}</a></h1>
+      <span class="post-date">{{ page.date | date_to_string }}</span>
+      {{ content }}
+  </div>
 
-<div class="social-section">
-  <div class="fb-like" data-href="{{ page.url }}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-  <a href="https://twitter.com/share" class="twitter-share-button" data-via="mtrimarchi" data-lang="it" data-dnt="true">Tweet</a>
-</div>
+  <div class="social-section">
+      <div class="fb-like" data-href="{{ page.url }}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="mtrimarchi" data-lang="it" data-dnt="true">Tweet</a>
+  </div>
 
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'trimarchimanuele'; // required: replace example with your forum shortname
+  <!-- Disqus Comments -->
+  <div class="comments clearfix">
+      <button id="js-button-comment" class="btn btn-default btn-disqus" onclick="initDisqus_onClick()"><i class="fa fa-comment"></i>
+          <span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ page.url }}">Leave a comment</span>
+      </button>
+      <div id="disqus_thread"></div>
+      <noscript>
+          <p>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+          </p>
+      </noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+  <script id="dsq-count-scr" src="//{{ site.disqus_username }}.disqus.com/count.js" async></script>
+  <script>
+      var disqus_config = function() {
+          this.page.url = '{{ site.url }}{{ page.url }}';
+      };
 
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      function initDisqus_onClick() {
+          document.getElementById('js-button-comment').classList.add('hidden');
+          var d = document,
+              s = d.createElement('script');
+          s.src = '//{{ site.disqus_username }}.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      }
+  </script>
 
 
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ site.url }}{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  <div class="related">
+      <h2>Related Posts</h2>
+      <ul class="related-posts">
+          {% for post in site.related_posts limit:3 %}
+          <li>
+              <h3>
+            <a href="{{ site.url }}{{ post.url }}">
+              {{ post.title }}
+              <small>{{ post.date | date_to_string }}</small>
+            </a>
+          </h3>
+          </li>
+          {% endfor %}
+      </ul>
+  </div>
