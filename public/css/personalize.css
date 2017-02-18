@@ -215,50 +215,39 @@ a.pagination-item:hover {
 	}
 }
 
-/*!
- *  Font Awesome 4.1.0 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('../font-awesome/fonts/fontawesome-webfont.eot?v=4.1.0');
-  src: url('../font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'),
-       url('../font-awesome/fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'),
-       url('../font-awesome/fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'),
-       url('../font-awesome/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-.fa {
-  display: inline-block;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.fa-link:before {
-  content: "\f0c1";
-}
 /*
- * This code is courtesy Ben Balter, modified by Parker Moore for jekyllrb.com
- * http://ben.balter.com/2014/03/13/pages-anchor-links/
+ * Header link placement and hover behavior
  */
-.header-link {
-  position: relative;
-  left: 0.5em;
-  opacity: 0;
-  font-size: 0.8em;
 
-  -webkit-transition: opacity 0.2s ease-in-out 0.1s;
-  -moz-transition: opacity 0.2s ease-in-out 0.1s;
-  -ms-transition: opacity 0.2s ease-in-out 0.1s;
+.header-link {
+  position: absolute;
+  padding-right: .5em;
+  margin-left: -1em;
+  color: inherit !important;
+  text-decoration: none !important;
+  opacity: 0;
 }
-h2:hover .header-link,
-h3:hover .header-link,
-h4:hover .header-link,
-h5:hover .header-link,
-h6:hover .header-link {
+
+.header-link .fa {
+  font-size: 66%;
+  vertical-align: .1em;
+}
+
+/* do not display in less than 768px screen */
+@media (max-width: 767px) {
+  .header-link {
+    display: none !important;
+  }
+}
+
+*:hover > .header-link {
+  opacity: .75;
+  /* to fade links as they appear, change transition-property from 'color' to 'all' */
+  -webkit-transition: color .16s linear;
+  transition: color .16s linear;
+}
+
+*:hover > .header-link:hover,
+*:hover > .header-link:focus {
   opacity: 1;
 }

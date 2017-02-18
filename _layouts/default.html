@@ -35,33 +35,29 @@
 		<!-- Header Anchor Links in Vanilla JavaScript for GitHub Pages and Jekyll
 		https://byparker.com/blog/2014/header-anchor-links-in-vanilla-javascript-for-github-pages-and-jekyll/ -->
 		<script>
-		var anchorForId = function (id) {
-			var anchor = document.createElement("a");
-			anchor.className = "header-link";
-			anchor.href      = "#" + id;
-			anchor.innerHTML = "<i class=\"fa fa-link\"></i>";
-			return anchor;
-		};
-		var linkifyAnchors = function (level, containingElement) {
-			var headers = containingElement.getElementsByTagName("h" + level);
-			for (var h = 0; h < headers.length; h++) {
-				var header = headers[h];
-				if (typeof header.id !== "undefined" && header.id !== "") {
-					header.appendChild(anchorForId(header.id));
-				}
-			}
-		};
-		document.onreadystatechange = function () {
-			if (this.readyState === "complete") {
-					var contentBlock = document.getElementsByClassName("docs")[0] || document.getElementsByClassName("news")[0];
-					if (!contentBlock) {
-					return;
-				}
-				for (var level = 1; level <= 6; level++) {
-					linkifyAnchors(level, contentBlock);
-				}
-			}
-		};
+		/**
+		 * jQuery snippet to add anchor links to Markdown posts header
+		 */
+
+		$(function () {
+		  'use strict';
+
+		  /* selector */
+		  var postHeader = '.markdown-body > h3, .markdown-body > h4';
+
+		  $(postHeader).filter('[id]').each(function () {
+		    var header      = $(this),
+		        headerID    = header.attr('id'),
+		        anchorClass = 'header-link',
+		        anchorIcon  = '<i class="fa fa-link" aria-hidden="true"></i>';
+
+		    if (headerID) {
+		      header.prepend($('<a />').addClass(anchorClass).attr({ 'href': '#' + headerID, 'aria-hidden': 'true' }).html(anchorIcon));
+		    }
+
+		    return this;
+		  });
+		});
 		</script>
 	</body>
 </html>
