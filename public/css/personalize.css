@@ -227,7 +227,14 @@ a.pagination-item:hover {
 @media(max-width: 767px) { .comments { margin-bottom: 60px; } }
 .comments a { color: #3f4549; }
 .comments a:focus, .comments a:hover{ color: #303437; }
-.btn-disqus { display: block; width: 100%; padding: 13px; font-size: 13px; border-radius: 4px; }
+.btn-disqus {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	display: block;
+	width: 100%;
+	padding: 13px;
+	font-size: 13px;
+	border-radius: 4px; }
 .btn-disqus.fa { margin-right: .6em; }
 
 /**
