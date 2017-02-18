@@ -11,8 +11,8 @@ baseurl:          '/'
 url:              'https://trimarchimanuele.it'
 permalink:        '/:year/:month/:title/'
 license:
-  link:           'https://creativecommons.org/licenses/by-nc/3.0/'
-  label:          'CC BY-NC'
+  link:           'https://github.com/mtrimarchi/mtrimarchi.github.io/blob/master/LICENSE.md'
+  label:          'MIT License'
 author:
   name:           Manuele Trimarchi
   url:            https://trimarchimanuele.it
