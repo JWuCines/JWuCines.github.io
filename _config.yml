@@ -5,7 +5,7 @@ markdown:         kramdown
 title:            Traceroute the way
 description:      Traceroute the way - Manuele Trimarchi's weblog
 tagline:          di Manuele Trimarchi
-paginate:         5
+paginate:         1
 paginate_path:    '/page/:num'
 baseurl:          '/'
 url:              'https://trimarchimanuele.it'
