@@ -3,7 +3,7 @@ layout: post
 status: publish
 published: true
 title: Ipusm Simpli ciadulis
-description: Lorem markdownum clamat coactis
+description: Lorem markdownum bellum conubia, manu luctus si aquarum videres
 origlink: https://github.com/jaspervdj/lorem-markdownum
 date: 2017-01-12 01:59:00 +0200
 categories:

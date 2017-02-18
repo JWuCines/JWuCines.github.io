@@ -3,7 +3,7 @@ layout: post
 status: publish
 published: true
 title: Tanrus Malieru Portatis
-description: Lorem markdownum clamat coactis
+description: Lorem markdownum, quaque rettulit, amantem placidique propinquos
 origlink: https://github.com/jaspervdj/lorem-markdownum
 date: 2016-12-02 19:12:00 +0200
 categories:
