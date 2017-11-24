@@ -3,36 +3,36 @@ markdown:         kramdown
 
 # Setup
 title:            Traceroute the way
-description:      Traceroute the way - Manuele Trimarchi's weblog
-tagline:          di Manuele Trimarchi
+description:      Traceroute the way - weblog
+tagline:          di Jiang Wu
 paginate:         5
 paginate_path:    '/page/:num'
 baseurl:          '/'
-url:              'https://trimarchimanuele.it'
+url:              'https://jiangwu.eu'
 permalink:        '/:year/:month/:title/'
 license:
-  link:           'https://github.com/mtrimarchi/mtrimarchi.github.io/blob/master/LICENSE.md'
+  link:           'https://github.com/JWuCines/jiangwu.github.io/blob/master/LICENSE.md'
   label:          'MIT License'
 author:
-  name:           Manuele Trimarchi
-  url:            https://trimarchimanuele.it
-  email:          github@trimarchimanuele.it
+  name:           Jiang Wu
+  url:            https://jiangwu.eu
+  email:          github@jiangwu.eu
 
 # Social media vars
-twitter_username:     mtrimarchi
-github_username:      mtrimarchi
-bitbucket_username:   mtrimarchi
-linkedin_username:    trimarchimanuele
-google_plus_username: ManueleTrimarchi
-facebook_username:    mtrimarchi
-telegram_username:    mtrimarchi
-disqus_username:      trimarchimanuele
-fb_app_id:            254147531706027
+twitter_username:     JWuCines
+github_username:      JWuCines
+bitbucket_username:   -
+linkedin_username:    jwucines
+google_plus_username: JiangWuCines
+facebook_username:    JWuCines
+telegram_username:    JWuCines
+disqus_username:      -
+fb_app_id:            0
 
 # Custom vars
 version:          0.3.0
 github:
-  repo:           https://github.com/mtrimarchi/mtrimarchi.github.io
+  repo:           https://github.com/JWuCines/jiangwu.github.io
 
 # Custom configs
 gems: [jekyll-paginate]

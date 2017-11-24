@@ -1,5 +1,5 @@
 # Traceroute the way
-## Manuele Trimarchi's italian weblog
+## Italian weblog
 
 Well well, I finally made all my blog available under Jekyll.
 
@@ -16,8 +16,8 @@ Just download this repository, and serve the content using the Jekyll built-in w
 (Updates are coming: now I manage all my blogging infrastructure using Grunt. Stay tuned if you are interested in this!)
 
 ```bash
-$ git clone git@github.com:mtrimarchi/mtrimarchi.github.io.git
-$ cd mtrimarchi.github.io
+$ git clone git@github.com:JWuCines/jiangwu.github.io.git
+$ cd jiangwu.github.io
 $ jekyll serve
 ```
 
