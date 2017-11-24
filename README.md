@@ -16,8 +16,8 @@ Just download this repository, and serve the content using the Jekyll built-in w
 (Updates are coming: now I manage all my blogging infrastructure using Grunt. Stay tuned if you are interested in this!)
 
 ```bash
-$ git clone git@github.com:JWuCines/jiangwu.github.io.git
-$ cd jiangwu.github.io
+$ git clone git@github.com:JWuCines/JWuCines.github.io.git
+$ cd JWuCines.github.io
 $ jekyll serve
 ```
 
