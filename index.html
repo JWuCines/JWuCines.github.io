@@ -16,6 +16,7 @@ title: Home
     <!-- End post -->
     {% endfor %}
   </div>
+  {% if paginator.total_posts > 0 %}
   <!-- Start pagination -->
   <div class="pagination">
     {% if paginator.next_page %}
@@ -34,3 +35,7 @@ title: Home
     {% endif %}
   </div>
   <!-- End pagination -->
+  {% else %}
+  <br />
+  <br />
+  {% endif %}

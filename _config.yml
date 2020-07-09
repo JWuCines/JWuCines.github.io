@@ -4,10 +4,10 @@ markdown:         kramdown
 # Setup
 title:            Jiang Wu
 description:      Jiang Wu Website
-tagline:          Data Engineer @ Adyen (🇳🇱)
+tagline:          Data Engineer @ Adyen (NL)
 paginate:         5
 paginate_path:    '/page/:num'
-baseurl:          '/'
+baseurl:          ''
 url:              'https://www.jiangwu.eu'
 permalink:        '/:year/:month/:title/'
 license:
@@ -34,7 +34,7 @@ github:
   repo:           https://github.com/JWuCines/jwucines.github.io
 
 # Custom configs
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 kramdown:
   auto_ids: true # Auto-generate ID's for headings
