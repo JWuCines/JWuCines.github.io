@@ -7,7 +7,7 @@ description:      Jiang Wu Website
 tagline:          Data Engineer @ Adyen (NL)
 paginate:         5
 paginate_path:    '/page/:num'
-baseurl:          ''
+baseurl:          '/'
 url:              'https://www.jiangwu.eu'
 permalink:        '/:year/:month/:title/'
 license:
@@ -15,7 +15,7 @@ license:
   label:          'MIT License'
 author:
   name:           Jiang Wu
-  url:            https://jiangwu.eu
+  url:            https://www.jiangwu.eu
   email:          github@jiangwu.eu
 
 # Social media vars
