@@ -7,7 +7,6 @@ description:      Jiang Wu Website
 tagline:          Data Engineer @ Adyen (NL)
 paginate:         5
 paginate_path:    '/page/:num'
-baseurl:          '/'
 url:              'https://www.jiangwu.eu'
 permalink:        '/:year/:month/:title/'
 license:
