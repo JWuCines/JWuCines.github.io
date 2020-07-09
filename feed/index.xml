@@ -18,15 +18,15 @@ layout: null
         <title>{{ post.title | xml_escape }}</title>
         <link>{{ post.origlink }}</link>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <author>github@trimarchimanuele.it (Manuele Trimarchi)</author>
-        <guid>https://trimarchimanuele.it{{ post.id }}</guid>
-        <description><![CDATA[ {{ post.content }} <p><a href="https://trimarchimanuele.it{{ post.url }}">★</a></p>]]></description>
+        <author>github@jiangwu.eu (Jiang Wu)</author>
+        <guid>https://www.jiangwu.eu{{ post.id }}</guid>
+        <description><![CDATA[ {{ post.content }} <p><a href="https://www.jiangwu.eu{{ post.url }}">★</a></p>]]></description>
       {% else %}
         <title>{{ post.title }}</title>
-        <link>https://trimarchimanuele.it{{ post.url }}</link>
+        <link>https://www.jiangwu.eu{{ post.url }}</link>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <author>github@trimarchimanuele.it (Manuele Trimarchi)</author>
-        <guid>https://trimarchimanuele.it{{ post.id }}</guid>
+        <author>github@jiangwu.eu (Manuele Trimarchi)</author>
+        <guid>https://jiangwu.eu{{ post.id }}</guid>
         <description>{{ post.content | xml_escape }}</description>
       {% endif %}
     </item>

@@ -1,7 +1,5 @@
-# Traceroute the way
-## Italian weblog
-
-Well well, I finally made all my blog available under Jekyll.
+# Jiang Wu website
+## www.jiangwu.eu
 
 ## Technologies I'm using
 - [Jekyll](http://jekyllrb.com/)
@@ -12,8 +10,6 @@ Well well, I finally made all my blog available under Jekyll.
 
 ## Run, debug, study my shit
 Just download this repository, and serve the content using the Jekyll built-in webserver.
-
-(Updates are coming: now I manage all my blogging infrastructure using Grunt. Stay tuned if you are interested in this!)
 
 ```bash
 $ git clone git@github.com:JWuCines/JWuCines.github.io.git
