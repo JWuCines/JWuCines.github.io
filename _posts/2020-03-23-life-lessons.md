@@ -1,7 +1,7 @@
 ---
 title: "Life lessons"
-date: 2013-03-23T10:55:09+05:45
-redirect_from: "/2013/life-lessons/"
+date: 2020-03-23T10:55:09+05:45
+redirect_from: "/2020/life-lessons/"
 ---
 
 No matter who tries to teach you lessons about life, you won't understand it until you have to go through them on your own.

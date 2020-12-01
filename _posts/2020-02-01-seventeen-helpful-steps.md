@@ -1,8 +1,8 @@
 ---
 title: "Seventeen helpful steps"
-date: 2013-02-01T12:02:53+05:45
+date: 2020-02-01T12:02:53+05:45
 description: "Explore the simple life with these steps and believe life is simple."
-redirect_from: "/2013/seventeen-helpful-steps/"
+redirect_from: "/2020/seventeen-helpful-steps/"
 ---
 
 1. Never give up on anybody; miracles happen every day.

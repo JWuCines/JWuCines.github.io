@@ -1,8 +1,8 @@
 ---
 title: "9 Google search tricks"
-date: 2012-05-07T05:51:59+05:45
+date: 2019-05-07T05:51:59+05:45
 description: "Use these cool shortcuts to find things better and faster"
-redirect_from: "/2012/9-google-search-tricks/"
+redirect_from: "/2019/9-google-search-tricks/"
 ---
 
 Not many users know the little tricks that can be used to get more out of a simple Google search. Following are the top nine Google search tricks:

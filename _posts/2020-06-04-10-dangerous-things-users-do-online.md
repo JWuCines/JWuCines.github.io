@@ -1,8 +1,8 @@
 ---
 title: "10 dangerous things users do online"
-date: 2012-06-04T19:47:29+05:45
+date: 2020-06-04T19:47:29+05:45
 description: "Protect yourself from getting hacked, phised or burgled"
-redirect_from: "/2012/10-dangerous-things-users-do-online/"
+redirect_from: "/2020/10-dangerous-things-users-do-online/"
 ---
 
 Researchers at internet security service provider CyberDefender look at some of the most dangerous things users do online. They also offer advice on how to avoid these negative habits.

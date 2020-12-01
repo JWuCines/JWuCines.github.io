@@ -1,8 +1,8 @@
 ---
 title: "Classroom called life"
-date: 2012-04-30T09:21:36+05:45
+date: 2020-04-30T09:21:36+05:45
 description: "Life is a classroom."
-redirect_from: "/2012/classroom-called-life/"
+redirect_from: "/2020/classroom-called-life/"
 ---
 
 At 5 I learned our dog doesn't want to eat my broccoli either.

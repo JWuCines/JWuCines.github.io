@@ -1,8 +1,8 @@
 ---
 title: "Workplace colours"
-date: 2013-02-09T10:39:34+05:45
+date: 2020-02-09T10:39:34+05:45
 description: "The ultimate guide for the colours that you should (and shouldn't) wear to work."
-redirect_from: "/2013/workplace-colours/"
+redirect_from: "/2020/workplace-colours/"
 ---
 
 Having trouble picking out what to wear to work? Focusing on colours might not only help you narrow down your choices, but may also benefit your career. Research has shown that colours can greatly affect our moods and the way other people respond to us.

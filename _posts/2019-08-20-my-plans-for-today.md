@@ -1,8 +1,8 @@
 ---
 title: "My plans for today"
-date: 2012-08-20T09:25:48+05:45
+date: 2019-08-20T09:25:48+05:45
 author: "Steve Maraboli"
-redirect_from: "/2012/my-plans-for-today/"
+redirect_from: "/2019/my-plans-for-today/"
 ---
 
 I woke up early today, excited over all I get to do before the clock strikes midnight.
